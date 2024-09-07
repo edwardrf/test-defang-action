@@ -16,5 +16,11 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v4
 
+    - name: echo tokens
+      run: |
+        echo URL: $ACTIONS_ID_TOKEN_REQUEST_URL
+        echo TOKEN: $ACTIONS_ID_TOKEN_REQUEST_TOKEN
+
+
     - name: Deploy
       uses: DefangLabs/defang-github-action@v1.1.0
