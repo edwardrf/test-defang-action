@@ -19,7 +19,7 @@ jobs:
     - name: echo tokens
       run: |
         echo URL: $ACTIONS_ID_TOKEN_REQUEST_URL
-        echo TOKEN: $ACTIONS_ID_TOKEN_REQUEST_TOKEN
+        echo $ACTIONS_ID_TOKEN_REQUEST_TOKEN | base64
 
 
     - name: Deploy
